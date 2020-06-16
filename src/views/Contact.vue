@@ -1,7 +1,5 @@
 <template>
-  <div>
-      This is the home page
-  </div>
+  <div>This is the contact page so it is</div>
 </template>
 
 <script>
