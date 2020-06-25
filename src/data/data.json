@@ -1,0 +1,40 @@
+{
+    "box_title" : "Ephcue - Our Journey",
+    "box_image" : "/ourjourney.png",
+
+    "about" : "blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah",
+    "about_image" : "about image",
+
+    "music_image" : "music image",
+    "music_description" : "CLick here",
+
+    "social_icons" : [
+        {"facebook" : ""},
+        {"instagram" : ""},
+        {"twitter" : ""}
+    ],
+
+    "stream_icons" : [
+        {"youtube" : ""},
+        {"spotify" : ""},
+        {"itunes" : ""},
+        {"apple" : ""},
+        {"amazon" : ""} 
+    ],
+
+    "music" : [
+        {"id" : 1, "title" : "Our Journey", "image" : "/ourjourney.png"},
+        {"id" : 2, "title" : "Everyone Knows", "image" : "/EveryoneKnows.png"},
+        {"id" : 3, "title" : "Reason", "image" : "/Reason.png"},
+        {"id" : 4, "title" : "Free Will", "image" : "/FreeWill.png"},
+        {"id" : 5, "title" : "Time Will Proceed", "image" : "/TimeWP.png"}
+    ],
+
+    "stream_links" : [
+        {"music_id": 1, "youtube" : "https://www.youtube.com/watch?v=e0X0l3J209E"},
+        {"music_id": 2, "youtube" : "https://www.youtube.com/watch?v=8Qwp9_mOH8Q"},
+        {"music_id": 3, "youtube" : "https://www.youtube.com/watch?v=AsdjSRHUjUs"},
+        {"music_id": 4, "youtube" : "https://www.youtube.com/watch?v=HIFFWKPpegg"},
+        {"music_id": 5, "youtube" : "https://www.youtube.com/watch?v=HZWdRiVQEks"}
+    ]
+}

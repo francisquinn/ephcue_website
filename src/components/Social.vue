@@ -1,6 +1,11 @@
 <template>
   <v-container class="blue">
-      Social
+      <v-row class="orange">
+        <v-col class="text-center">Social</v-col>
+      </v-row>
+      <v-row>
+        <v-col class="text-center">(Icons)</v-col>
+      </v-row>
   </v-container>
 </template>
 

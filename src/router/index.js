@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Music from '../views/Music.vue'
 import Contact from '../views/Contact.vue'
+import Track from '../views/Track.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,12 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/music/:id',
+    name: 'Track',
+    component: Track,
+    props: true
   }
 ]
 

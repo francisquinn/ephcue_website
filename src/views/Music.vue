@@ -1,14 +1,18 @@
 <template>
   <div>
     <FilterMusic></FilterMusic>
-    <MusicCard></MusicCard>
+    <MusicCard :info="Data"></MusicCard>
   </div>
 </template>
 
 <script>
 import FilterMusic from "@/components/Filter";
-import MusicCard from "@/components/MusicDisplay";
+import MusicCard from "@/components/MusicPage";
+import Data from '../data/data';
 export default {
+  data: () => ({
+    Data
+  }),
   components: {
     FilterMusic,
     MusicCard
