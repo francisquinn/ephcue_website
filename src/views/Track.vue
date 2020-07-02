@@ -13,24 +13,27 @@
           <v-card-text class="text-center">
             <div class="display-1">{{info[id - 1].title}}</div>
             <br />
-            <p>Official Audio</p>
-            <p>OUT NOW</p>
+            <p>By Ephcue</p>
             <br />
-            <a :href="stream[id - 1].youtube" target="_blank">youtube</a>
+            <Stream :id="id"></Stream>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
-
+<!-- <a :href="stream[id - 1].youtube" target="_blank">youtube</a>  -->
 <script>
 import Data from "../data/data";
+import Stream from "@/components/Stream";
 export default {
+  components: {
+    Stream
+  },
   props: ["id"],
   data: () => ({
     info: Data.music,
-    stream : Data.stream_links
+    stream: Data.stream_links
   })
 };
 </script>

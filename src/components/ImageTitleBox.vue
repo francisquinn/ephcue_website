@@ -12,14 +12,14 @@
       </v-col>
       <!-- Title box -->
       <v-col cols="12" md="6" sm="6">
-        <v-card flat class="justify-center" >
+        <v-card flat class="justify-center">
           <v-card-text class="text-center">
             <div class="display-1">{{info.box_title}}</div>
-            <br>
+            <br />
             <p>Official Audio</p>
             <p>OUT NOW</p>
-            <br>
-            <p>(ICONS*)</p>
+            <br />
+            <Stream :id='1'></Stream>
           </v-card-text>
         </v-card>
       </v-col>
@@ -28,7 +28,11 @@
 </template>
 
 <script>
+import Stream from "@/components/Stream";
 export default {
+  components: {
+    Stream
+  },
   props: {
     info: {
       type: Object

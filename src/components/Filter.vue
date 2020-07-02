@@ -3,7 +3,7 @@
       <!-- Laptop/computer filter -->
     <v-container class="yellow pa-0 my-2 text-center" v-if="`${this.$vssWidth}` > 500">
       <v-row class="mx-3" >
-        <v-col>Filter = {{this.$vssWidth}}</v-col>
+        <v-col><input type="text" v-model="search" placeholder="Search title.."/></v-col>
       </v-row>
     </v-container>
     <!-- Phone filter button -->

@@ -6,21 +6,7 @@
     "about_image" : "about image",
 
     "music_image" : "music image",
-    "music_description" : "CLick here",
-
-    "social_icons" : [
-        {"facebook" : ""},
-        {"instagram" : ""},
-        {"twitter" : ""}
-    ],
-
-    "stream_icons" : [
-        {"youtube" : ""},
-        {"spotify" : ""},
-        {"itunes" : ""},
-        {"apple" : ""},
-        {"amazon" : ""} 
-    ],
+    "music_description" : "Go To Music",
 
     "music" : [
         {"id" : 1, "title" : "Our Journey", "image" : "/ourjourney.png"},
@@ -36,5 +22,11 @@
         {"music_id": 3, "youtube" : "https://www.youtube.com/watch?v=AsdjSRHUjUs"},
         {"music_id": 4, "youtube" : "https://www.youtube.com/watch?v=HIFFWKPpegg"},
         {"music_id": 5, "youtube" : "https://www.youtube.com/watch?v=HZWdRiVQEks"}
+    ],
+
+    "social_links" : [
+        {"facebook" : "https://www.facebook.com/ephcue"},
+        {"instagram" : "https://www.instagram.com/ephcue"},
+        {"twitter" : "https://www.twitter.com/ephcue"}
     ]
 }

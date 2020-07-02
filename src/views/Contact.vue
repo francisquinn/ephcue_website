@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ContactForm from '@/components/ContactForm'
+import ContactForm from '@/components/ContactDisplay'
 import Social from '@/components/Social'
 export default {
   components: {

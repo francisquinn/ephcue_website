@@ -1,8 +1,10 @@
 <template>
   <nav>
     <!-- Large screen laptop/computer navbar -->
-    <v-app-bar color="white" flat v-if="`${this.$vssWidth}` > 500">
-      <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+    <v-app-bar app dense fixed color="white" flat v-if="`${this.$vssWidth}` > 500">
+      <router-link tag="a" id="title_link" to="/">
+        <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+      </router-link>
       <v-spacer></v-spacer>
       <div class="pa-2" v-for="page in pages" :key="page.text">
         <router-link id="link" :to="`${page.route}`">
@@ -12,9 +14,11 @@
     </v-app-bar>
 
     <!-- Small screen navbar with a drawer -->
-    <v-app-bar color="white" flat v-if="`${this.$vssWidth}` <= 500">
-      <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+    <v-app-bar app dense fixed color="white" flat v-if="`${this.$vssWidth}` <= 500">
+      <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>  
+      <router-link tag="a" id="title_link" to="/">
+        <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+      </router-link>
     </v-app-bar>
 
     <!-- Drawer -->
@@ -51,12 +55,14 @@ export default {
 </script>
 
 <style scoped>
-/*.router-link-exact-active {
-  border-bottom: 4px solid black;
-}*/
 #link{
   text-decoration: none;
   padding: 5px;
+}
+#title_link{
+  text-decoration: none;
+  padding: 5px;
+  color: black;
 }
 #button:hover{
   border-bottom: 4px solid black;
