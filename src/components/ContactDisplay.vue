@@ -4,7 +4,7 @@
     <v-container class="blue pa-0 my-2" v-if="`${this.$vssWidth}` > 550">
       <v-row class="green mx-3">
         <v-col class="text-center">
-          <span class="pa-1">Contact me</span>
+          <span id="comp_title" class="pa-1">Contact me</span>
         </v-col>
       </v-row>
       <v-row class="purple mx-3">

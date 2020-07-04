@@ -27,6 +27,13 @@ export default {
 #App{
   background: #f9f9f9;
 }
-
+@font-face {
+  font-family: "Galada";
+  src: url("/Galada-Regular.ttf");
+}
+#comp_title {
+  font-family: Galada;
+  font-size: 40px;
+}
 
 </style>

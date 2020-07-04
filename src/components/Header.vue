@@ -3,7 +3,8 @@
     <!-- Large screen laptop/computer navbar -->
     <v-app-bar app dense fixed color="white" flat v-if="`${this.$vssWidth}` > 500">
       <router-link tag="a" id="title_link" to="/">
-        <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+        <v-toolbar-title>
+         <span id="header_text_style">Ephcue</span>  {{this.$vssWidth}}</v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
       <div class="pa-2" v-for="page in pages" :key="page.text">
@@ -15,9 +16,10 @@
 
     <!-- Small screen navbar with a drawer -->
     <v-app-bar app dense fixed color="white" flat v-if="`${this.$vssWidth}` <= 500">
-      <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>  
+      <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon> 
       <router-link tag="a" id="title_link" to="/">
-        <v-toolbar-title>Ephcue {{this.$vssWidth}}</v-toolbar-title>
+        <v-toolbar-title>
+         <span id="header_text_style">Ephcue</span>  {{this.$vssWidth}}</v-toolbar-title>
       </router-link>
     </v-app-bar>
 
@@ -66,5 +68,13 @@ export default {
 }
 #button:hover{
   border-bottom: 4px solid black;
+}
+@font-face {
+  font-family: 'Galada';
+  src: url('/Galada-Regular.ttf'); 
+}
+#header_text_style{
+font-family: Galada; 
+font-size: 30px;
 }
 </style>

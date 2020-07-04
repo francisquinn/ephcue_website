@@ -14,7 +14,7 @@
       </v-row>
     </v-container>
     <!-- Small screen -->
-    <v-container v-if="`${this.$vssWidth}` <= 420">
+    <v-container v-if="`${this.$vssWidth}` <= 420 && `${this.$vssWidth}` > 326">
       <v-row wrap>
         <v-col class="text-center">
           <a :href="stream[id - 1].youtube" target="_blank">
@@ -30,6 +30,26 @@
         </v-col>
         <v-col>
           <v-icon id="amazon" size="70">{{ amazon }}</v-icon>
+        </v-col>
+      </v-row>
+    </v-container>
+    <!-- Very small screen -->
+    <v-container v-if="`${this.$vssWidth}` <= 326 ">
+      <v-row wrap>
+        <v-col class="text-center">
+          <a :href="stream[id - 1].youtube" target="_blank">
+            <v-icon id="youtube" size="60">{{ youtube }}</v-icon>
+          </a>
+        </v-col>
+        <v-col>
+          <v-icon id="spotify" size="60">{{ spotify }}</v-icon>
+        </v-col>
+
+        <v-col class="text-center">
+          <v-icon id="apple" size="60">{{ apple }}</v-icon>
+        </v-col>
+        <v-col>
+          <v-icon id="amazon" size="60">{{ amazon }}</v-icon>
         </v-col>
       </v-row>
     </v-container>

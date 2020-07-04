@@ -3,7 +3,9 @@
     <!-- Large screen -->
     <v-container v-if="`${this.$vssWidth}` > 375" class="white">
       <v-row class="orange">
-        <v-col class="text-center">Social</v-col>
+        <v-col class="text-center">
+          <span id="comp_title">Social</span>
+        </v-col>
       </v-row>
       <v-row>
         <v-col class="text-center">
@@ -18,7 +20,7 @@
       </v-row>
     </v-container>
 
-    <!-- Small screen --> 
+    <!-- Small screen -->
     <v-container v-if="`${this.$vssWidth}` <= 375" class="white">
       <v-row class="orange">
         <v-col class="text-center">Social</v-col>
