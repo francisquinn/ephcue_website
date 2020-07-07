@@ -4,11 +4,9 @@
     <br />
     <About :info="Data"></About>
     <br />
-    <Music :info="Data"></Music>
-    <br />
     <Social :info="Data"></Social>
     <br />
-    <Newsletter :info="Data"></Newsletter>
+    <Music :info="Data"></Music>
   </div>
 </template>
 
@@ -17,7 +15,6 @@ import ImageTitleBox from "@/components/ImageTitleBox";
 import About from "@/components/About";
 import Social from "@/components/Social";
 import Music from "@/components/MusicHome";
-import Newsletter from "@/components/Newsletter";
 import Data from "../data/data";
 
 export default {
@@ -30,8 +27,7 @@ export default {
     ImageTitleBox,
     About,
     Social,
-    Music,
-    Newsletter
+    Music
   }
 };
 </script>

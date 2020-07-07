@@ -1,15 +1,18 @@
 <template>
-  <v-container class="green">
-    <v-row class="yellow">
+  <v-container>
+    <v-card>
+    <v-row>
       <v-col class="text-center">
         <span id="comp_title">Music</span>
       </v-col>
     </v-row>
+    <v-divider></v-divider>
     <v-row justify="center" align="center">
       <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
         <v-img :src="info.music_image"></v-img>
       </v-col>
-      <v-col class="red text-center" cols="12" sm="6" md="6" lg="6">
+      <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
+        <v-card flat>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo doloremque repudiandae recusandae facere temporibus dicta, molestias sunt quod voluptatibus perferendis eum at quibusdam exercitationem molestiae autem earum eligendi voluptate!</p>
         <div>
           <router-link id="link" tag="a" to="/music">
@@ -19,8 +22,10 @@
             </v-btn>
           </router-link>
         </div>
+        </v-card>
       </v-col>
     </v-row>
+    </v-card>
   </v-container>
 </template>
 

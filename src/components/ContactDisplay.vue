@@ -1,28 +1,31 @@
 <template>
   <div>
     <!-- Large screen -->
-    <v-container class="blue pa-0 my-2" v-if="`${this.$vssWidth}` > 550">
-      <v-row class="green mx-3">
+    <v-container class="my-2" v-if="`${this.$vssWidth}` > 550">
+      <v-card>
+      <v-row class="mx-3">
         <v-col class="text-center">
           <span id="comp_title" class="pa-1">Contact me</span>
         </v-col>
       </v-row>
-      <v-row class="purple mx-3">
+      <v-divider></v-divider>
+      <v-row class="mx-3">
         <v-col class="d-inline-flex">
           <v-row justify="center">
             <v-card tile class="white">
               <v-card-text class="text-center">
-                <v-icon>{{email}}</v-icon>
+                <v-icon class="black--text">{{email}}</v-icon>
               </v-card-text>
             </v-card>
-            <v-card tile class="pink">
-              <v-card-text class="text-center">
+            <v-card tile class="black">
+              <v-card-text class="text-center white--text">
                 <span>ephcue@gmail.com</span>
               </v-card-text>
             </v-card>
           </v-row>
         </v-col>
       </v-row>
+      </v-card>
     </v-container>
 
     <!-- Small screen -->

@@ -35,5 +35,18 @@ export default {
   font-family: Galada;
   font-size: 40px;
 }
+@font-face {
+  font-family: "Maven";
+  src: url("/MavenPro-Regular.ttf");
+}
+#track_hover{
+  font-family: Maven;
+  color: black;
+}
+#track_title {
+  font-family: Maven;
+  font-size: 50px;
+  color: #323232;
+}
 
 </style>

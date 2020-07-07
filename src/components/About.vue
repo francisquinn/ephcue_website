@@ -1,10 +1,11 @@
 <template>
-  <v-container class="pink">
-    <v-row class="blue">
+  <v-container class="white">
+    <v-row class="white">
       <v-col class="text-center">
         <span id="comp_title">About me</span>
       </v-col>
     </v-row>
+    <v-divider></v-divider>
     <v-row class="green">
       <v-col class="text-center" cols="12" lg="6" md="6" sm="6">{{info.about_image}}</v-col>
       <v-col class="red" cols="12" lg="6" md="6" sm="6">

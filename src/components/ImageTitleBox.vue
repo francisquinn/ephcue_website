@@ -1,6 +1,6 @@
 <template>
   <!-- Container for image and title box -->
-  <v-container class="red">
+  <v-container >
     <v-row>
       <!-- Image box -->
       <v-col cols="12" md="6" sm="6">
@@ -12,10 +12,10 @@
       </v-col>
       <!-- Title box -->
       <v-col cols="12" md="6" sm="6">
-        <v-card class="justify-center">
+        <v-card  class="justify-center">
           <v-card-text class="text-center">
             <div class="display-1">
-             <span class="inherit--text">{{info.box_title}}</span> 
+             <span id="track_title">{{info.box_title}}</span> 
             </div>
             <br />
             <p>Official Audio</p>
