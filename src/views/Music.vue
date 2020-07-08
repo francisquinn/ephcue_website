@@ -1,7 +1,5 @@
 <template>
-  <div>
     <MusicCard :info="Data"></MusicCard>
-  </div>
 </template>
 
 <script>

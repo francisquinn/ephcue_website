@@ -48,5 +48,10 @@ export default {
   font-size: 50px;
   color: #323232;
 }
+#error_404{
+  font-family: Maven;
+  color: black;
+  font-size: 25px;
+}
 
 </style>

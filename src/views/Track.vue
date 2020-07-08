@@ -1,4 +1,5 @@
 <template>
+<div>
   <v-container>
     <v-row>
       <v-col cols="12" md="6" sm="6">
@@ -23,6 +24,7 @@
       </v-col>
     </v-row>
   </v-container>
+  </div>
 </template>
 <!-- <a :href="stream[id - 1].youtube" target="_blank">youtube</a>  -->
 <script>
