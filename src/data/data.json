@@ -1,67 +1,82 @@
 {
     "box_title": "Our Journey",
     "box_image": "/ourjourney.png",
-    "about_image": "about image",
+    "about_image": "/about.jpg",
     "music_image": "/music_web.png",
     "music_button": "Go To Music",
+    "lyrics": [
+        {
+            "id": 1,
+            "lyric": "this is a sentence of lyrics lol relelelelelelelelelelelel"
+        }
+    ],
     "music": [
         {
             "id": 1,
             "title": "Our Journey",
-            "image": "/ourjourney.png"
+            "image": "/ourjourney.png",
+            "description": "'Our Journey' is a song focused around my 3 year relationship with my girlfriend. It talks about our journey from when we first met at the begining to the present day. The highs and lows of being in a long distance relationship."
         },
         {
             "id": 2,
             "title": "Everyone Knows",
-            "image": "/EveryoneKnows.png"
+            "image": "/EveryoneKnows.png",
+            "description": "'Everyone knows' is a track that is about knowing the next pathway to choose after school. A rushed decision to decide a future that I didn't fully understand. Whereas many people think to know everything about the next pathway in life, when in reality, does anyone know?"
         },
         {
             "id": 3,
             "title": "Reason",
-            "image": "/Reason.png"
+            "image": "/Reason.png",
+            "description": "'Reason' disscusses the topic of having a reason for this life. Comparing life to a game, to understand if there is a reason to even play the 'game'. Going through the different stages of life from studying in college to maintaining a job until getting a pension. Everyone is trying to find a reason for this life, so doesn't that make us all the same?"
         },
         {
             "id": 4,
             "title": "Free Will",
-            "image": "/FreeWill.png"
+            "image": "/FreeWill.png",
+            "description": "'Free Will' asks the question about whether or not we have free will to make decisions in our life."
         },
         {
             "id": 5,
             "title": "Time Will Proceed",
-            "image": "/TimeWP.png"
+            "image": "/TimeWP.png",
+            "description": "'Time Will Proceed' was the first track that I officaily published. The main motive behind this track was to express the importance of putting time over money. "
         }
     ],
     "stream_links": [
         {
             "music_id": 1,
-            "youtube": "https://www.youtube.com/watch?v=e0X0l3J209E"
+            "youtube": "https://www.youtube.com/watch?v=e0X0l3J209E",
+            "spotify": "https://open.spotify.com/track/11I2Ls93toQCwJlVCcSYhI?si=tnjHwdh-S9eh14f_4DfEKA",
+            "apple": "https://music.apple.com/us/album/our-journey/1516006023?i=1516006024",
+            "amazon": "https://music.amazon.com/albums/B089FGCKCZ?trackAsin=B089FGLKF1&ref=dm_sh_ffc1-517a-dmcp-b409-a52bd&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
         },
         {
             "music_id": 2,
-            "youtube": "https://www.youtube.com/watch?v=8Qwp9_mOH8Q"
+            "youtube": "https://www.youtube.com/watch?v=8Qwp9_mOH8Q",
+            "spotify": "https://open.spotify.com/track/0HjdkinDWLVZqVoJMTH799?si=smbpKZfvTTi4_e1WU-MGnQ",
+            "apple": "https://music.apple.com/us/album/everyone-knows/1511078988?i=1511078989",
+            "amazon": "https://music.amazon.com/albums/B087PKHGGN?trackAsin=B087PLVX4G&ref=dm_sh_d744-b779-dmcp-6df9-6bdf9&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
         },
         {
             "music_id": 3,
-            "youtube": "https://www.youtube.com/watch?v=AsdjSRHUjUs"
+            "youtube": "https://www.youtube.com/watch?v=AsdjSRHUjUs",
+            "spotify": "https://open.spotify.com/track/69DYXQuJlHXZcCDitMf8JI?si=Va6RlRZgQvOtNF5Xo1qTIA",
+            "apple": "https://music.apple.com/us/album/reason/1510837281?i=1510837282",
+            "amazon": "https://music.amazon.com/albums/B087PM195Q?trackAsin=B087PLP2VW&ref=dm_sh_d5eb-9db9-dmcp-b80a-32a54&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
         },
         {
             "music_id": 4,
-            "youtube": "https://www.youtube.com/watch?v=HIFFWKPpegg"
+            "youtube": "https://www.youtube.com/watch?v=HIFFWKPpegg",
+            "spotify": "https://open.spotify.com/track/1Y8dbPuAlo0AcUunnxkUz2?si=YThy3TpDTCOerTJ8zU1vwg",
+            "apple": "https://music.apple.com/us/album/free-will/1510829754?i=1510829755",
+            "amazon": "https://music.amazon.com/albums/B08816231B?trackAsin=B08816BMGJ&ref=dm_sh_33f3-de89-dmcp-1b12-3173e&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
         },
         {
             "music_id": 5,
-            "youtube": "https://www.youtube.com/watch?v=HZWdRiVQEks"
-        }
-    ],
-    "social_links": [
-        {
-            "facebook": "https://www.facebook.com/ephcue"
-        },
-        {
-            "instagram": "https://www.instagram.com/ephcue"
-        },
-        {
-            "twitter": "https://www.twitter.com/ephcue"
+            "youtube": "https://www.youtube.com/watch?v=HZWdRiVQEks",
+            "spotify": "https://open.spotify.com/track/50xTeCnS9poRicUSTD9Vog?si=Q0OqPn4nQEO59--mCog1FQ",
+            "apple": "https://music.apple.com/us/album/time-will-proceed/1509319554?i=1509319556",
+            "amazon": "https://music.amazon.com/albums/B0879F2ZBX?trackAsin=B0879DHDSR&ref=dm_sh_dc61-5724-dmcp-0a9a-0788e&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
         }
     ]
 }

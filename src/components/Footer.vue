@@ -3,12 +3,20 @@
     <v-row class="black white--text" justify="center" align="center">
       <v-col class="text-center">
         <a href="https://www.facebook.com/ephcue" target="_blank">
-            <v-icon id="facebook">{{ facebook }}</v-icon>
-          </a>
-        <v-icon id="instagram">{{instagram}}</v-icon>
-        <v-icon id="twitter">{{twitter}}</v-icon> 
+          <v-icon id="facebook">{{ facebook }}</v-icon>
+        </a>
+        <a href="https://www.instagram.com/ephcue" target="_blank">
+          <v-icon id="instagram">{{instagram}}</v-icon>
+        </a>
+        <a href="https://www.twitter.com/ephcue" target="_blank">
+          <v-icon id="twitter">{{twitter}}</v-icon>
+        </a>
+
         <v-divider></v-divider>
-        <span id="date">{{ new Date().getFullYear() }} — <strong>Ephcue</strong></span>
+        <span id="date">
+          {{ new Date().getFullYear() }} —
+          <strong>Ephcue</strong>
+        </span>
       </v-col>
     </v-row>
   </v-footer>
@@ -50,7 +58,7 @@ export default {
   color: #ffffff;
   cursor: pointer;
 }
-#date{
+#date {
   margin-top: 100px;
 }
 </style>

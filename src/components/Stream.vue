@@ -7,9 +7,15 @@
           <a :href="stream[id - 1].youtube" target="_blank">
             <v-icon id="youtube" size="50">{{ youtube }}</v-icon>
           </a>
-          <v-icon id="spotify" size="50">{{ spotify }}</v-icon>
-          <v-icon id="apple" size="50">{{ apple }}</v-icon>
-          <v-icon id="amazon" size="50">{{ amazon }}</v-icon>
+          <a :href="stream[id - 1].spotify" target="_blank">
+            <v-icon id="spotify" size="50">{{ spotify }}</v-icon>
+          </a>
+          <a :href="stream[id - 1].apple" target="_blank">
+            <v-icon id="apple" size="50">{{ apple }}</v-icon>
+          </a>
+          <a :href="stream[id - 1].amazon" target="_blank">
+            <v-icon id="amazon" size="50">{{ amazon }}</v-icon>
+          </a>
         </v-col>
       </v-row>
     </v-container>

@@ -57,4 +57,7 @@ export default {
 </script>
 
 <style>
+#link{
+  text-decoration: none;
+}
 </style>

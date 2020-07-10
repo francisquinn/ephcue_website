@@ -4,46 +4,46 @@
     <!-- Laptop/computer filter -->
     <v-container class="white pa-0 my-2" v-if="`${this.$vssWidth}` > 500">
       <v-card>
-      <v-row class="mx-3">
-        <v-col class="d-inline-flex">
-          <span class="my-1" id="musicpage_title">Music</span>
-          <v-spacer></v-spacer>
-          <div id="search_div" class="white my-1">
-            <v-icon>{{search_icon}}</v-icon>
-            <input
-              type="text"
-              autocomplete="off"
-              id="search_box"
-              v-model="search"
-              placeholder="Search track ..."
-            />
-          </div>
-        </v-col>
-      </v-row>
+        <v-row class="mx-3">
+          <v-col class="d-inline-flex">
+            <span class="my-1" id="musicpage_title">Music</span>
+            <v-spacer></v-spacer>
+            <div id="search_div" class="white my-1">
+              <v-icon>{{search_icon}}</v-icon>
+              <input
+                type="text"
+                autocomplete="off"
+                id="search_box"
+                v-model="search"
+                placeholder="Search track ..."
+              />
+            </div>
+          </v-col>
+        </v-row>
       </v-card>
     </v-container>
     <!-- Phone search button -->
     <v-container class="my-2" v-if="`${this.$vssWidth}` <= 500">
       <v-card>
-      <v-row justify="center" align="center">
-        <v-col class="text-center">
-          <span id="musicpage_title">Music</span>
-          <div class="white pa-1 my-4">
-            <v-icon>{{search_icon}}</v-icon>
-            <input
-              type="text"
-              autocomplete="off"
-              id="search_box"
-              v-model="search"
-              placeholder="Search title.."
-            />
-          </div>
-        </v-col>
-      </v-row>
+        <v-row justify="center" align="center">
+          <v-col class="text-center">
+            <span id="musicpage_title">Music</span>
+            <div class="white pa-1 my-4">
+              <v-icon>{{search_icon}}</v-icon>
+              <input
+                type="text"
+                autocomplete="off"
+                id="search_box"
+                v-model="search"
+                placeholder="Search title.."
+              />
+            </div>
+          </v-col>
+        </v-row>
       </v-card>
     </v-container>
     <!-- End of filter -->
-    <!-- Grid of music --> 
+    <!-- Grid of music -->
     <v-container>
       <v-row wrap>
         <v-col cols="12" sm="6" md="4" lg="3" v-for="music in filteredList" :key="music.id">
@@ -63,10 +63,10 @@
                       </v-row>
                       <v-row>
                         <v-col class="text-center">
-                          <router-link :to="`music/${music.id}`">
+                          <router-link id="link" :to="`music/${music.id}`">
                             <v-btn class="black white--text">
                               <span>View Track</span>
-                              <v-icon>{{play}}</v-icon> 
+                              <v-icon>{{play}}</v-icon>
                             </v-btn>
                           </router-link>
                         </v-col>
@@ -80,6 +80,7 @@
         </v-col>
       </v-row>
     </v-container>
+  
     <!-- No Search Results found container -->
     <v-container class="white" v-if="filteredList == false">
       <v-row>

@@ -18,21 +18,27 @@
             <br />
             <p>By Ephcue</p>
             <br />
+            <Description :id="id"></Description>
             <Stream :id="id"></Stream>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
+  <Lyrics></Lyrics>
   </div>
 </template>
 <!-- <a :href="stream[id - 1].youtube" target="_blank">youtube</a>  -->
 <script>
 import Data from "../data/data";
 import Stream from "@/components/Stream";
+import Description from '@/components/Description';
+import Lyrics from '@/components/Lyrics'
 export default {
   components: {
-    Stream
+    Stream,
+    Description,
+    Lyrics
   },
   props: ["id"],
   data: () => ({
