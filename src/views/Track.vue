@@ -25,7 +25,8 @@
       </v-col>
     </v-row>
   </v-container>
-  <Lyrics></Lyrics>
+  <Lyrics :id="id"></Lyrics>
+  <Recommend :id="id"></Recommend>
   </div>
 </template>
 <!-- <a :href="stream[id - 1].youtube" target="_blank">youtube</a>  -->
@@ -33,12 +34,14 @@
 import Data from "../data/data";
 import Stream from "@/components/Stream";
 import Description from '@/components/Description';
-import Lyrics from '@/components/Lyrics'
+import Lyrics from '@/components/Lyrics';
+import Recommend from '@/components/Recommend';
 export default {
   components: {
     Stream,
     Description,
-    Lyrics
+    Lyrics,
+    Recommend
   },
   props: ["id"],
   data: () => ({

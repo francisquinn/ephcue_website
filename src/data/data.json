@@ -4,12 +4,6 @@
     "about_image": "/about.jpg",
     "music_image": "/music_web.png",
     "music_button": "Go To Music",
-    "lyrics": [
-        {
-            "id": 1,
-            "lyric": "this is a sentence of lyrics lol relelelelelelelelelelelel"
-        }
-    ],
     "music": [
         {
             "id": 1,
