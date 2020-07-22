@@ -18,6 +18,8 @@
             <br />
             <p>By Ephcue</p>
             <br />
+            <span><b>Release date:</b> {{info[id - 1].released_date}}</span>
+            <br/>
             <Description :id="id"></Description>
             <Stream :id="id"></Stream>
           </v-card-text>

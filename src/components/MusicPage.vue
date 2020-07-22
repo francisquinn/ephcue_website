@@ -8,16 +8,31 @@
           <v-col class="d-inline-flex">
             <span class="my-1" id="musicpage_title">Music</span>
             <v-spacer></v-spacer>
+            <!--<div class="text-center mr-5 my-0">
+              <v-menu offset-y>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn text color=" black--text ma-0 pa-0" v-bind="attrs" v-on="on">Filter</v-btn>
+                </template>
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-content>
+                      hi
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </div>-->
             <div id="search_div" class="white my-1">
               <v-icon>{{search_icon}}</v-icon>
               <input
-                type="text"
+                type="search"
                 autocomplete="off"
                 id="search_box"
                 v-model="search"
-                placeholder="Search track ..."
+                placeholder="Search track"
               />
             </div>
+            
           </v-col>
         </v-row>
       </v-card>
@@ -28,16 +43,25 @@
         <v-row justify="center" align="center">
           <v-col class="text-center">
             <span id="musicpage_title">Music</span>
-            <div class="white pa-1 my-4">
+            <br />
+            <v-btn text class="white" block @click="expand = !expand">
               <v-icon>{{search_icon}}</v-icon>
-              <input
-                type="text"
-                autocomplete="off"
-                id="search_box"
-                v-model="search"
-                placeholder="Search title.."
-              />
-            </div>
+              <span class="mx-1">Search</span>
+            </v-btn>
+            <v-expand-transition>
+              <v-card flat v-show="expand" height="50" class="mx-auto ">
+                <v-card-text>
+                  <input
+                  type="search"
+                  autocomplete="off"
+                  id="search_box_phone"
+                  v-model="search"
+                  placeholder="Search track"
+                />
+                </v-card-text>
+                
+              </v-card>
+            </v-expand-transition>
           </v-col>
         </v-row>
       </v-card>
@@ -80,7 +104,7 @@
         </v-col>
       </v-row>
     </v-container>
-  
+
     <!-- No Search Results found container -->
     <v-container class="white" v-if="filteredList == false">
       <v-row>
@@ -143,8 +167,13 @@ export default {
 }
 #search_box {
   outline: 0;
-  border-bottom: 1px solid #999999;
   padding: 3px;
+  border-bottom: 1px solid lightgray;
+}
+#search_box_phone {
+  outline: 0;
+  padding: 3px;
+  width: 90%;
 }
 @font-face {
   font-family: "Galada";

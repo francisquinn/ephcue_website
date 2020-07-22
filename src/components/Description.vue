@@ -1,5 +1,5 @@
 <template>
-  <v-container class="red">{{track[id - 1].description}}</v-container>
+  <v-container>{{track[id - 1].description}}</v-container>
 </template>
 
 <script>

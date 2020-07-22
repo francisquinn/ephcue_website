@@ -2,6 +2,7 @@
     "box_title": "Our Journey",
     "box_image": "/ourjourney.png",
     "about_image": "/about.jpg",
+    "about_description": "<p>I am a 21 year old rap artist, producer and songwriter from Ireland. The main genre of my music is hip hop/rap. I've always had a passion for music, whether it would be listening or creating it on my own.</p><p>I began by producing simple beats to understand and learn the basics of music production. I then decided to start writing lyrics to express myself through a poetic style of rap.</p><p>Nobody knows what the future holds, so for now I will continue to vibe and make beats to rap over them.</p>",
     "music_image": "/music_web.png",
     "music_button": "Go To Music",
     "music": [
@@ -9,31 +10,36 @@
             "id": 1,
             "title": "Our Journey",
             "image": "/ourjourney.png",
-            "description": "'Our Journey' is a song focused around my 3 year relationship with my girlfriend. It talks about our journey from when we first met at the begining to the present day. The highs and lows of being in a long distance relationship."
+            "released_date": "12 June 2020",
+            "description": "'Our Journey' is a song focused around my 3-year relationship with my girlfriend. It talks about our journey from when we first met at the beginning to the present day. The highs and lows of being in a long-distance relationship."
         },
         {
             "id": 2,
             "title": "Everyone Knows",
             "image": "/EveryoneKnows.png",
-            "description": "'Everyone knows' is a track that is about knowing the next pathway to choose after school. A rushed decision to decide a future that I didn't fully understand. Whereas many people think to know everything about the next pathway in life, when in reality, does anyone know?"
+            "released_date": "22 April 2020",
+            "description": "'Everyone knows' is a track that is about knowing the next pathway to choose after school. A rushed decision to decide a future that I didn't fully understand. Whereas many people think to know everything about the next pathway in life, when, does anyone know?"
         },
         {
             "id": 3,
             "title": "Reason",
             "image": "/Reason.png",
-            "description": "'Reason' disscusses the topic of having a reason for this life. Comparing life to a game, to understand if there is a reason to even play the 'game'. Going through the different stages of life from studying in college to maintaining a job until getting a pension. Everyone is trying to find a reason for this life, so doesn't that make us all the same?"
+            "released_date": "01 April 2020",
+            "description": "'Reason' discusses the topic of having a reason for this life. Comparing life to a game, to understand if there is a reason to even play the 'game'. Going through the different stages of life from studying in college to maintaining a job until getting a pension. Everyone is trying to find a reason for this life, so doesn't that make us all the same?"
         },
         {
             "id": 4,
             "title": "Free Will",
             "image": "/FreeWill.png",
-            "description": "'Free Will' asks the question about whether or not we have free will to make decisions in our life."
+            "released_date": "01 Feb 2020",
+            "description": "'Free Will' asks the question about whether we have free will to make decisions in our life. The track also briefly covers the topic of freedom. In a world that is built with systems and regulations in place to control the mass population, does one have true freedom? Is our subconsciousness controlling the decisions we make in life?"
         },
         {
             "id": 5,
             "title": "Time Will Proceed",
             "image": "/TimeWP.png",
-            "description": "'Time Will Proceed' was the first track that I officaily published. The main motive behind this track was to express the importance of putting time over money. "
+            "released_date": "11 Jan 2020",
+            "description": "'Time Will Proceed' was the first track that I officially published. The main motive behind this track was to express the importance of putting time over money. We can spend money and it will always come back, but when we spend time, we can never get it back because time will proceed."
         }
     ],
     "stream_links": [

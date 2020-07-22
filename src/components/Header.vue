@@ -5,7 +5,6 @@
       <router-link tag="a" id="title_link" to="/">
         <v-toolbar-title>
           <span id="header_text_style">Ephcue</span>
-          {{this.$vssWidth}}
         </v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
@@ -22,7 +21,6 @@
       <router-link tag="a" id="title_link" to="/">
         <v-toolbar-title>
           <span id="header_text_style">Ephcue</span>
-          {{this.$vssWidth}}
         </v-toolbar-title>
       </router-link>
     </v-app-bar>

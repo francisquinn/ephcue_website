@@ -28,14 +28,20 @@
           </a>
         </v-col>
         <v-col>
-          <v-icon id="spotify" size="70">{{ spotify }}</v-icon>
+          <a :href="stream[id - 1].spotify" target="_blank">
+            <v-icon id="spotify" size="70">{{ spotify }}</v-icon>
+          </a>
         </v-col>
 
         <v-col class="text-center">
-          <v-icon id="apple" size="70">{{ apple }}</v-icon>
+          <a :href="stream[id - 1].apple" target="_blank">
+            <v-icon id="apple" size="70">{{ apple }}</v-icon>
+          </a>
         </v-col>
         <v-col>
-          <v-icon id="amazon" size="70">{{ amazon }}</v-icon>
+          <a :href="stream[id - 1].amazon" target="_blank">
+            <v-icon id="amazon" size="70">{{ amazon }}</v-icon>
+          </a>
         </v-col>
       </v-row>
     </v-container>
@@ -48,14 +54,20 @@
           </a>
         </v-col>
         <v-col>
-          <v-icon id="spotify" size="60">{{ spotify }}</v-icon>
+          <a :href="stream[id - 1].spotify" target="_blank">
+            <v-icon id="spotify" size="60">{{ spotify }}</v-icon>
+          </a>
         </v-col>
 
         <v-col class="text-center">
-          <v-icon id="apple" size="60">{{ apple }}</v-icon>
+          <a :href="stream[id - 1].apple" target="_blank">
+            <v-icon id="apple" size="60">{{ apple }}</v-icon>
+          </a>
         </v-col>
         <v-col>
-          <v-icon id="amazon" size="60">{{ amazon }}</v-icon>
+          <a :href="stream[id - 1].amazon" target="_blank">
+            <v-icon id="amazon" size="60">{{ amazon }}</v-icon>
+          </a>
         </v-col>
       </v-row>
     </v-container>

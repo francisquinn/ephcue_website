@@ -7,25 +7,31 @@
         </v-col>
       </v-row>
       <v-divider></v-divider>
-      <v-row justify="center" align="center">
+      <v-row class="mx-1" justify="center" align="center">
         <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
-          <v-img :src="info.music_image"></v-img>
+          <v-card flat class="ma-2">
+            <v-img :src="info.music_image"></v-img>
+          </v-card>
         </v-col>
-        <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
+
+        <v-col cols="10" sm="6" md="6" lg="6">
           <v-card flat class="black--text pa-3">
             <p>
               The music page is where I showcase all the music I have created.
               You will be able to view each track individually with links to each streaming service,
               a short description about the topic of the track and the lyrics.
             </p>
-            <div>
+            <br>
+            <v-row>
+              <v-col class="text-center">
               <router-link id="link" tag="a" to="/music">
                 <v-btn id="button" class="black white--text">
                   <span>{{info.music_button}}</span>
                   <v-icon>{{play}}</v-icon>
                 </v-btn>
               </router-link>
-            </div>
+              </v-col>
+            </v-row>
           </v-card>
         </v-col>
       </v-row>
