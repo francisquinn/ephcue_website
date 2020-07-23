@@ -26,7 +26,7 @@
               <v-card-text class="py-0">By Ephcue</v-card-text>
               <br />
               <router-link id="link" :to="`${track[trackID - 1].id}`">
-                <v-btn text  class="white black--text pr-0">
+                <v-btn @click="hide"  text  class="white black--text pr-0">
                   <span>View Track</span>
                   <v-icon>{{play}}</v-icon>
                 </v-btn>
@@ -46,7 +46,10 @@ import VueScreenSize from "vue-screen-size";
 import Data from "../data/data";
 import { mdiPlay } from "@mdi/js";
 export default {
-  props: ["id"],
+  props: {
+    id: String,
+    readMore: Boolean
+  },
   data: () => ({
     track: Data.music,
     track_ids: [1, 2, 3, 4, 5],
@@ -59,6 +62,9 @@ export default {
       const shuffled = array.sort(() => 0.5 - Math.random());
       let selected = shuffled.slice(0, 2);
       return selected;
+    },
+    hide() {
+      this.$emit('hide', false);
     }
   }
 };

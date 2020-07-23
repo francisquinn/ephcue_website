@@ -27,8 +27,8 @@
       </v-col>
     </v-row>
   </v-container>
-  <Lyrics :id="id"></Lyrics>
-  <Recommend :id="id"></Recommend>
+  <Lyrics :id="id" :readMore="readMore" @show="show" @hide="hide"></Lyrics>
+  <Recommend :id="id" :readMore="readMore" @hide="hide"></Recommend>
   </div>
 </template>
 <!-- <a :href="stream[id - 1].youtube" target="_blank">youtube</a>  -->
@@ -48,8 +48,17 @@ export default {
   props: ["id"],
   data: () => ({
     info: Data.music,
-    stream: Data.stream_links
-  })
+    stream: Data.stream_links,
+    readMore: false
+  }),
+  methods:{
+    show(value){
+      this.readMore = value;
+    },
+    hide(value){
+      this.readMore = value;
+    }
+  }
 };
 </script>
 

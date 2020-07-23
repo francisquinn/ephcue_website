@@ -13,14 +13,8 @@
       </v-row>
       <v-row class="pa-0">
         <v-col>
-          <v-btn class="blue--text" text v-show="!readMore" @click="readMore = true">Read more</v-btn>
-          <v-btn
-            class="red--text"
-            text
-            v-show="readMore"
-            v-if="readMore"
-            @click="readMore = false"
-          >close</v-btn>
+          <v-btn class="blue--text" text v-show="!readMore" @click="show">Read more</v-btn>
+          <v-btn class="red--text" text v-show="readMore" @click="hide">close</v-btn>
         </v-col>
       </v-row>
     </v-card>
@@ -30,11 +24,22 @@
 <script>
 import lyrics from "../data/lyrics";
 export default {
-  props: ["id"],
+  props: {
+    id: String,
+    readMore: Boolean
+  },
   data: () => ({
-    trackLyrics: lyrics.lyrics,
-    readMore: false
-  })
+    trackLyrics: lyrics.lyrics
+  }),
+  methods: {
+    show() {
+      this.$emit('show', true);
+    },
+    hide() {
+      this.$emit('hide', false);
+    }
+  },
+
 };
 </script>
 
