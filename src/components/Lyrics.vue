@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card>
+    <v-card id="maven-text">
       <v-row class="mx-3">
         <v-col class="text-center">
           <span id="comp_title" class="pa-1">Lyrics</span>

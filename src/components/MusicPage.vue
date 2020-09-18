@@ -22,7 +22,7 @@
                 </v-list>
               </v-menu>
             </div>-->
-            <div id="search_div" class="white my-1">
+            <div id="maven-text" class="white my-1">
               <v-icon>{{search_icon}}</v-icon>
               <input
                 type="search"
@@ -32,7 +32,6 @@
                 placeholder="Search track"
               />
             </div>
-            
           </v-col>
         </v-row>
       </v-card>
@@ -45,21 +44,20 @@
             <span id="musicpage_title">Music</span>
             <br />
             <v-btn text class="white" block @click="expand = !expand">
-              <v-icon>{{search_icon}}</v-icon>
-              <span class="mx-1">Search</span>
+              <v-icon >{{search_icon}}</v-icon>
+              <span id="maven-text" class="mx-1">Search</span>
             </v-btn>
             <v-expand-transition>
-              <v-card flat v-show="expand" height="50" class="mx-auto ">
+              <v-card id="maven-text" flat v-show="expand" height="50" class="mx-auto">
                 <v-card-text>
                   <input
-                  type="search"
-                  autocomplete="off"
-                  id="search_box_phone"
-                  v-model="search"
-                  placeholder="Search track"
-                />
+                    type="search"
+                    autocomplete="off"
+                    id="search_box_phone"
+                    v-model="search"
+                    placeholder="Search track"
+                  />
                 </v-card-text>
-                
               </v-card>
             </v-expand-transition>
           </v-col>
@@ -74,7 +72,12 @@
           <v-card>
             <v-responsive :aspect-ratio="10/8">
               <v-hover v-slot:default="{ hover }">
-                <v-img :src="music.image">
+                <v-img :src="music.image" :lazy-src="music.image">
+                  <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="black lighten-5"></v-progress-circular>
+                    </v-row>
+                  </template>
                   <v-expand-transition>
                     <div
                       v-if="hover"
@@ -88,7 +91,7 @@
                       <v-row>
                         <v-col class="text-center">
                           <router-link id="link" :to="`music/${music.id}`">
-                            <v-btn class="black white--text">
+                            <v-btn id="maven-text" class="black white--text">
                               <span>View Track</span>
                               <v-icon>{{play}}</v-icon>
                             </v-btn>
@@ -115,7 +118,7 @@
                 <v-icon class="black--text">{{no_search}}</v-icon>
               </v-card-text>
             </v-card>
-            <v-card tile class="black">
+            <v-card id="maven-text" tile class="black">
               <v-card-text class="text-center white--text">
                 <span>No search results found</span>
               </v-card-text>
@@ -135,24 +138,24 @@ import { mdiPlay } from "@mdi/js";
 export default {
   props: {
     info: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data: () => ({
     search: "",
     search_icon: mdiMagnify,
     no_search: mdiCloseCircle,
     play: mdiPlay,
-    expand: false
+    expand: false,
   }),
   mixins: [VueScreenSize.VueScreenSizeMixin],
   computed: {
     filteredList() {
-      return this.info.music.filter(track => {
+      return this.info.music.filter((track) => {
         return track.title.toLowerCase().includes(this.search.toLowerCase());
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -172,8 +175,9 @@ export default {
 }
 #search_box_phone {
   outline: 0;
-  padding: 3px;
+  padding: 5px;
   width: 90%;
+  border-bottom: 1px solid lightgray;
 }
 @font-face {
   font-family: "Galada";

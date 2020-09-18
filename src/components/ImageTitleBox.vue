@@ -5,14 +5,18 @@
       <!-- Image box -->
       <v-col cols="12" md="6" sm="6">
         <v-card>
-          <v-responsive :aspect-ratio="16/14">
-            <v-img :src="info.box_image"></v-img>
-          </v-responsive>
-        </v-card>
+            <v-img :src="info.box_image" :lazy-src="info.box_image">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="black lighten-5"></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+          </v-card>
       </v-col>
       <!-- Title box -->
       <v-col cols="12" md="6" sm="6">
-        <v-card  class="justify-center">
+        <v-card id="maven-text"  class="justify-center">
           <v-card-text class="text-center">
             <div class="display-1">
              <span id="track_title">{{info.box_title}}</span> 

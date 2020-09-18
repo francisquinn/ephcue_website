@@ -60,5 +60,6 @@ export default {
 }
 #date {
   margin-top: 100px;
+  font-family: Maven;
 }
 </style>

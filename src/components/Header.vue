@@ -8,9 +8,15 @@
         </v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
-      <div class="pa-2" v-for="page in pages" :key="page.text">
-        <router-link id="link" :to="`${page.route}`">
-          <v-btn id="button" text>{{page.text}}</v-btn>
+      <div class="pa-2">
+        <router-link id="link" exact to="/">
+          <span id="nav_link">Home</span>
+        </router-link>
+        <router-link id="link" to="/music">
+          <span id="nav_link">Music</span>
+        </router-link>
+        <router-link id="link" to="/contact">
+          <span id="nav_link">Contact</span>
         </router-link>
       </div>
     </v-app-bar>
@@ -37,14 +43,14 @@
             <v-icon>{{ page.icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="black--text">{{page.text}}</v-list-item-title>
+            <v-list-item-title id="maven-text" class="black--text">{{page.text}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
       <template v-slot:append>
         <v-card flat class="pa-2">
           <v-card-text class="text-center">
-            <span id="date">
+            <span id="maven-text">
               {{ new Date().getFullYear() }} —
               <strong>Ephcue</strong>
             </span>
@@ -65,7 +71,7 @@ export default {
     return {
       drawer: false,
       pages: [
-        { icon: mdiHome, text: "Home", route: "/" },
+        { icon: mdiHome, text: "Home", route: "/"},
         { icon: mdiMusicCircle, text: "Music", route: "/music" },
         { icon: mdiEmail, text: "Contact", route: "/contact" }
       ]
@@ -78,12 +84,14 @@ export default {
 <style scoped>
 #link {
   text-decoration: none;
-  padding: 5px;
+  padding: 12px;
 }
 #title_link {
   text-decoration: none;
   padding: 5px;
   color: black;
+  border: none;
+  font-weight: 100;
 }
 #button:hover {
   border-bottom: 4px solid black;
@@ -95,5 +103,25 @@ export default {
 #header_text_style {
   font-family: Galada;
   font-size: 30px;
+}
+a {
+  text-decoration: none;
+}
+#nav_link{
+  color: black;
+  font-family: Maven;
+  padding: 5px;
+  margin: 5px;
+}
+#nav_link:hover{
+  color: #7f7f7f;
+}
+.router-link-exact-active {
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+.router-link-active {
+  font-weight: 700;
+  border-bottom: 2px solid black;
 }
 </style>

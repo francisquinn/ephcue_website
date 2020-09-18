@@ -31,6 +31,9 @@ export default {
   font-family: "Galada";
   src: url("/Galada-Regular.ttf");
 }
+#gala-text{
+  font-family: Galada;
+}
 #comp_title {
   font-family: Galada;
   font-size: 40px;
@@ -38,6 +41,9 @@ export default {
 @font-face {
   font-family: "Maven";
   src: url("/MavenPro-Regular.ttf");
+}
+#maven-text{
+  font-family: Maven;
 }
 #track_hover{
   font-family: Maven;

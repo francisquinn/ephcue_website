@@ -12,14 +12,14 @@
         <v-row class="mx-3">
           <v-col class="d-inline-flex">
             <v-row justify="center">
-              <v-card tile class="white">
+              <v-card flat tile class="white">
                 <v-card-text class="text-center">
                   <v-icon class="black--text">{{email}}</v-icon>
                 </v-card-text>
               </v-card>
-              <v-card tile class="black">
+              <v-card id="maven-text" flat tile >
                 <a id="email_link" href="mailto:ephcue@gmail.com">
-                  <v-card-text class="text-center white--text">
+                  <v-card-text class="text-center black--text">
                     <span>ephcue@gmail.com</span>
                   </v-card-text>
                 </a>
@@ -42,14 +42,14 @@
         <v-row class="white mx-3">
           <v-col class="d-inline-flex">
             <v-row justify="center">
-              <v-card tile class="white">
+              <v-card flat tile class="white">
                 <v-card-text class="text-center">
                   <v-icon class="black--text">{{email}}</v-icon>
                 </v-card-text>
               </v-card>
-              <v-card tile class="black">
+              <v-card id="maven-text" flat tile >
                 <a id="email_link" href="mailto:ephcue@gmail.com">
-                  <v-card-text class="text-center white--text">
+                  <v-card-text class="text-center black--text">
                     <span>ephcue@gmail.com</span>
                   </v-card-text>
                 </a>
